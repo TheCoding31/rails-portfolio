@@ -1,5 +1,5 @@
-<h1>Contact</h1>
-<!-- app/views/pages/new_contact.html.erb -->
+<!-- app/views/contact_submissions/new.html.erb -->
+<h1>Contact Us</h1>
 <%= form_with(model: @submission, url: '/contact_submit', method: 'post') do |form| %>
   <label for="name">Name:</label>
   <%= form.text_field :name, required: true %>
@@ -9,7 +9,3 @@
   <%= form.text_area :message, required: true %>
   <%= form.submit 'Submit' %>
 <% end %>
-<ul class="d-flex flex-column p-2 border">
-  <%= link_to 'LinkedIn', "http://linkedin.com" %>
-  <%= link_to 'Github', "http://github.com" %>
-</ul>

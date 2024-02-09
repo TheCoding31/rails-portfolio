@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   get 'portfolio', to: 'pages#portfolio'
   get 'blog', to: 'pages#blog'
   get 'about', to: 'pages#about'
-  get 'contact', to: 'pages#contact'
+  get '/contact', to: 'contact_submissions#new'
+  post '/contact_submit', to: 'contact_submissions#create'
+  get '/view_submissions', to: 'contact_submissions#index'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

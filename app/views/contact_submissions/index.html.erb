@@ -1,0 +1,9 @@
+<!-- app/views/contact_submissions/index.html.erb -->
+<h1>Contact Form Submissions</h1>
+<% @submissions.each do |submission| %>
+  <p>
+    <strong>Name:</strong> <%= submission.name %><br>
+    <strong>Email:</strong> <%= submission.email %><br>
+    <strong>Message:</strong> <%= submission.message %>
+  </p>
+<% end %>
